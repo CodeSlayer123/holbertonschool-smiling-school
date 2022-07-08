@@ -1,0 +1,7 @@
+html, body {
+    max-width: 100% !important;
+    margin:auto !important;
+}
+.hero{
+    height: 90vh;
+}
