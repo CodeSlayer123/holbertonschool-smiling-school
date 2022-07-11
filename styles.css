@@ -99,3 +99,9 @@ figcaption {
         width: 50px !important;
     }
 }
+
+@media (max-width:576px) {
+    .nav-item {
+        margin-left: 200px !important;
+    }
+}
