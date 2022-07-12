@@ -80,16 +80,38 @@ figcaption {
     height: 50%;
 }
 .tutorials {
-    height: 95vh;
+    height: 90vh;
 }
 .play-btn{
     display: absolute !important;
-    margin-bottom: -115px !important;
-    margin-left: 90px;
+    margin-top: -110px !important;
+    margin-left: 120px;
     z-index: 12;
     width: 70px !important;
 }
+.tut-inner {
+    width: 70% !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+.leftarr{
+    margin-left: -350px !important;
+}
+.rightarr{
+    margin-left: 350px !important;
 
+}
+.membership {
+    background-color: #071629;
+    height: 60vh;
+}
+.memb-item{
+    width:40%;
+}
+
+footer {
+    height: 30vh;
+}
 
 @media (max-width:768px) and (min-width:768px) {
     .pros-container {
@@ -123,6 +145,7 @@ figcaption {
     .smile-logo {
         margin-left: -210px !important;
     }
+    
 }
 
 
@@ -156,6 +179,20 @@ figcaption {
     .quotes p {
         margin-right: 100px;
     }
+    .leftarr{
+        height: 15%;
+        padding-left: 150px;
+    }
+    .rightarr{
+        height: 15%;
+        padding-right: 150px;
+    }
+    .tutorials {
+        height: 140vh;
+    }
+    .membership {
+        height: 85vh;
+    }
 }
 
 
@@ -179,5 +216,17 @@ figcaption {
         margin-right: auto;
         width: 80%;
         margin-left:auto;
+    }
+    .leftarr{
+        height: 10% !important;
+        padding-left: 200px;
+    }
+    .rightarr{
+        height: 10% !important;
+        padding-right: 200px;
+    
+    }
+    .tutorials {
+        height: 270vh;
     }
 }
