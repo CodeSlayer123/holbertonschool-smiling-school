@@ -10,7 +10,7 @@
 html {
     max-width: 100% !important;
     margin:auto !important;
-    overflow-x: hidden !important;
+    overflow-x: initial !important;
 }
 body {
     font-family: 'Source Sans Pro' !important;
@@ -62,6 +62,13 @@ figcaption {
 .hero{
     height: 95vh;
 }
+.hero-faq{
+    height: 95vh;
+}
+.hero-courses{
+    height: 30vh !important;
+
+}
 .menu-hero{
     background-image: url('images/pic_1.jpg');
     background-repeat: no-repeat;
@@ -109,9 +116,32 @@ figcaption {
     width:40%;
 }
 
-footer {
-    height: 30vh;
+
+
+.filter-input .search-icon {
+    font-family: 'holberton_school-icon' !important;
+    font-size: 20px;
 }
+.search-bar .search-icon:before {
+    content: '\e912';
+}
+.filter input,
+.filter select,
+.filter-input,
+input[type=search]::placeholder {
+    background: #d195ff;
+    color: #FFF;
+}
+
+.filter input:focus,
+.filter select:focus,
+.filter-input:focus {
+    background: #d195ff;
+    color: #FFF;
+    outline: 0;
+    border: none;
+}
+
 
 @media (max-width:768px) and (min-width:768px) {
     .pros-container {
@@ -149,6 +179,143 @@ footer {
 }
 
 
+@font-face {
+    font-family: 'holberton_school-icon';
+    src:  url('./fonts/fonts/holberton_school-icon.eot?sq4eq4');
+    src:  url('./fonts/fonts/holberton_school-icon.eot?sq4eq4#iefix') format('embedded-opentype'),
+      url('./fonts/fonts/holberton_school-icon.ttf?sq4eq4') format('truetype'),
+      url('./fonts/fonts/holberton_school-icon.woff?sq4eq4') format('woff'),
+      url('./fonts/fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'holberton_school-icon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 96px;
+    color: #fff;
+  
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  /* footer */
+
+footer {
+  width: 100vw;
+  height: 30vh;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: #071629;
+  flex-direction: column;
+}
+
+.footer-inner {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  height: 200px;
+  width: 100%;
+  padding-top: 100px;
+
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.footer-logo {
+
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: left;
+  padding-left: 50px;
+  flex: 1;
+}
+
+.copyright {
+  align-self: flex-end;
+  color: rgba(255, 255, 255, 0.514);
+  font-size: 12px;
+  padding-top: 40px
+}
+.copyright-mobile {
+  display: none;
+  color: rgba(255, 255, 255, 0.514);
+  font-size: 12px;
+  padding:  0 0 30px 0;
+}
+
+
+.footer-socials {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: right;
+  text-decoration: none;
+  flex: 1;
+}
+
+
+  .holberton_school-icon-ic_facebook:before, .holberton_school-icon-ic_facebook {
+    content: "\e908";
+    margin: 0 5px;
+    font-size: 32px;
+  }
+  
+  .holberton_school-icon-ic_twitter:before, .holberton_school-icon-ic_twitter {
+    content: "\e90f";
+    margin: 0 5px;
+    font-size: 32px;
+  
+  
+  }
+  .holberton_school-icon-ic_instagram:before, .holberton_school-icon-ic_instagram {
+    content: "\e90a";
+    margin: 0 5px;
+    font-size: 32px;
+  
+  
+  }
+  .circle-check:before {
+    font-size: 24px;
+    color: #82D24F;
+    font-family: 'holberton_school-icon';
+    content: "\e905";
+}
+
+    .faq {
+        height:95vh;
+    }
+    .filter{
+        height: 23vh;
+        padding-left: 300px !important;
+    }
+    .vids {
+        height: 150vh;
+    }
+    .vids-inner {
+        width:1200px !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+
 @media (max-width:768px) {
     .pros {
         width: 120px !important;
@@ -159,6 +326,9 @@ footer {
     }
     .hero{
         height: 115vh;
+    }
+    .hero-faq{
+        height: 120vh;
     }
     .logo {
         width: 130px;
@@ -193,6 +363,21 @@ footer {
     .membership {
         height: 85vh;
     }
+    .faq{
+        height: 150vh;
+    }
+    .filter{
+        height: 47vh;
+        padding-left: 50px !important;
+    }
+    .vids {
+        height: 100vh;
+    }
+    .vids-inner {
+        width: 700px !important;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 
@@ -202,6 +387,9 @@ footer {
     }
     .hero {
         height: 170vh;
+    }
+    .hero-faq{
+        height: 120vh !important;
     }
     h1 {
         font-size: 80px !important;
@@ -227,6 +415,26 @@ footer {
     
     }
     .tutorials {
-        height: 270vh;
+        height: 150vh;
+    }
+    .copyright {
+        display: none;
+      }
+      .copyright-mobile {
+        display: block;
+      }
+
+      .faq {
+        height:180vh;
+    }
+    .filter{
+        height: 47vh;
+        padding-left: 50px !important;
+    }
+
+    .vids-inner {
+        width: 1800px !important;
+        margin-right: 1000px;
+        margin-left: auto;
     }
 }
